@@ -14,18 +14,18 @@ const SearchBar = () => {
                 <div className="relative w-1/2">
                 <input type="text" placeholder='Search' value={searchTerm} className='bg-gray-100 px-4 py-2 pl-2 pr-12 rounded-lg focus:outline-none w-full placeholder:text-gray-700'/>
                 <button type="submit" className='absolute right-2 top-1/2 transform -translate-y-1/2 textgray-600 hover:text-gray-800'>
-                    <FaMagnifyingGlass className='h-6 w-6'/>
+                    <FaMagnifyingGlass className='h-6 w-6 cursor-pointer'/>
                 </button>
                 <button
-                type='button' 
-                onClick={handleSearchToggle} 
-                className='absolute right-4 top-1/2 transform -translate-y-1/2 text-gray-600 hover:text-gray-800'>
+                    type='button' 
+                    onClick={handleSearchToggle} 
+                    className='absolute right-4 top-1/2 transform -translate-y-1/2 text-gray-600 hover:text-gray-800'>
                     <FaXmark className='h-6 w-6' />
                 </button>
                 </div>
             </form> ):(
                 <button onClick={handleSearchToggle}>
-                <FaMagnifyingGlass className='h-6 w-6 text-gray-700'/>
+                    <FaMagnifyingGlass className='h-6 w-6 text-gray-700'/>
                 </button>)
         }
     </div>
