@@ -33,7 +33,7 @@ const Navbar = () => {
           </Link>
           <button className='relative hover:text-black'>
             <FaCartArrowDown className='h-6 w-6 text-gray-700' />
-            <span className='absolute -top-4 -right-1  bg-rabbit-red text-white text-xs rounded-full px-2 py-0.5'>4</span>
+            <span className='absolute -top-4 -right-1 bg-primary text-white text-xs rounded-full px-2 py-0.5'>4</span>
           </button>
           {/* Search Button */}
           <div className="overflow-hidden">
